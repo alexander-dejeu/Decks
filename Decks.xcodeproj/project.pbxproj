@@ -1,1472 +1,787 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>047E5480963041749BBE1A56</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>0A3C8B5E0D67B8EE788EAC30</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-DecksUITests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-DecksUITests/Pods-DecksUITests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1366EC10B21D6870C9BB7773</key>
-		<dict>
-			<key>fileRef</key>
-			<string>38BC2DDE9CF6F187BB0CC8C2</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1D8E91A843B2BC028E37B196</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Decks.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Decks/Pods-Decks.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>20CCCFA0C0B39736DD08C3E3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A839E0EABDE22E0D7984E51</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>38BC2DDE9CF6F187BB0CC8C2</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_DecksTests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>49D800882575901468350D4E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C3CDB3537AC4D6AC0F7467E9</string>
-				<string>1D8E91A843B2BC028E37B196</string>
-				<string>836D1BC25E744ADD23CF4831</string>
-				<string>635E13260CE88509C2C305AC</string>
-				<string>0A3C8B5E0D67B8EE788EAC30</string>
-				<string>86B9E4E640ADB73211B1D400</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4B2ADC919747BF4D7BD2AFFE</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4BB32983BA47C18DC3C0B2F0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-DecksUITests/Pods-DecksUITests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>5030A9C1AFCD2981C3362277</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>635E13260CE88509C2C305AC</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-DecksTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>836D1BC25E744ADD23CF4831</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-DecksTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>86B9E4E640ADB73211B1D400</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-DecksUITests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-DecksUITests/Pods-DecksUITests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>86C13431754046B07A2F70C0</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>88BBCBA2227D1B1DFFC9D7E6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9858547FB085A2282FBCC516</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_DecksUITests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9A839E0EABDE22E0D7984E51</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Decks.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AF1FE577E46EDD1064E75155</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9A839E0EABDE22E0D7984E51</string>
-				<string>38BC2DDE9CF6F187BB0CC8C2</string>
-				<string>9858547FB085A2282FBCC516</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1720CBB874B00854B3789A6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Decks/Pods-Decks-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>C3CDB3537AC4D6AC0F7467E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Decks.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Decks/Pods-Decks.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CCBCD562DEBF58A27E61282F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9858547FB085A2282FBCC516</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F8966FA204B8FD0004DAC69B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Decks/Pods-Decks-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD872B1DA32D6200B0DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAAD87361DA32D6500B0DD2B</string>
-				<string>FAAD874B1DA32D6700B0DD2B</string>
-				<string>FAAD87561DA32D6700B0DD2B</string>
-				<string>FAAD87351DA32D6500B0DD2B</string>
-				<string>49D800882575901468350D4E</string>
-				<string>AF1FE577E46EDD1064E75155</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD872C1DA32D6200B0DD2B</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0800</string>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>DoGoodTechnology</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>FAAD87331DA32D6200B0DD2B</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>E2G7ZKJKQ5</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-					<key>FAAD87471DA32D6700B0DD2B</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>E2G7ZKJKQ5</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>FAAD87331DA32D6200B0DD2B</string>
-					</dict>
-					<key>FAAD87521DA32D6700B0DD2B</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>E2G7ZKJKQ5</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-						<key>TestTargetID</key>
-						<string>FAAD87331DA32D6200B0DD2B</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>FAAD872F1DA32D6200B0DD2B</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>FAAD872B1DA32D6200B0DD2B</string>
-			<key>productRefGroup</key>
-			<string>FAAD87351DA32D6500B0DD2B</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>FAAD87331DA32D6200B0DD2B</string>
-				<string>FAAD87471DA32D6700B0DD2B</string>
-				<string>FAAD87521DA32D6700B0DD2B</string>
-			</array>
-		</dict>
-		<key>FAAD872F1DA32D6200B0DD2B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FAAD875A1DA32D6700B0DD2B</string>
-				<string>FAAD875B1DA32D6700B0DD2B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FAAD87301DA32D6200B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FAAD873A1DA32D6500B0DD2B</string>
-				<string>FAAD87381DA32D6500B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87311DA32D6200B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>20CCCFA0C0B39736DD08C3E3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87321DA32D6200B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FAAD87421DA32D6600B0DD2B</string>
-				<string>FAAD873F1DA32D6600B0DD2B</string>
-				<string>FAAD87681DA3355200B0DD2B</string>
-				<string>FAAD873D1DA32D6600B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87331DA32D6200B0DD2B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FAAD875C1DA32D6800B0DD2B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>88BBCBA2227D1B1DFFC9D7E6</string>
-				<string>FAAD87301DA32D6200B0DD2B</string>
-				<string>FAAD87311DA32D6200B0DD2B</string>
-				<string>FAAD87321DA32D6200B0DD2B</string>
-				<string>F8966FA204B8FD0004DAC69B</string>
-				<string>C1720CBB874B00854B3789A6</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Decks</string>
-			<key>productName</key>
-			<string>Decks</string>
-			<key>productReference</key>
-			<string>FAAD87341DA32D6500B0DD2B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>FAAD87341DA32D6500B0DD2B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Decks.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FAAD87351DA32D6500B0DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAAD87341DA32D6500B0DD2B</string>
-				<string>FAAD87481DA32D6700B0DD2B</string>
-				<string>FAAD87531DA32D6700B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87361DA32D6500B0DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAAD87371DA32D6500B0DD2B</string>
-				<string>FAAD87391DA32D6500B0DD2B</string>
-				<string>FAAD873B1DA32D6600B0DD2B</string>
-				<string>FAAD873E1DA32D6600B0DD2B</string>
-				<string>FAAD87401DA32D6600B0DD2B</string>
-				<string>FAAD87431DA32D6600B0DD2B</string>
-				<string>FAAD87671DA3355200B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Decks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87371DA32D6500B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87381DA32D6500B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD87371DA32D6500B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD87391DA32D6500B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD873A1DA32D6500B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD87391DA32D6500B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD873B1DA32D6600B0DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAAD873C1DA32D6600B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD873C1DA32D6600B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD873D1DA32D6600B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD873B1DA32D6600B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD873E1DA32D6600B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD873F1DA32D6600B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD873E1DA32D6600B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD87401DA32D6600B0DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAAD87411DA32D6600B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87411DA32D6600B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87421DA32D6600B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD87401DA32D6600B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD87431DA32D6600B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87441DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FAAD874D1DA32D6700B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87451DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1366EC10B21D6870C9BB7773</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87461DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FAAD87691DA3355200B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87471DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FAAD875F1DA32D6800B0DD2B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>86C13431754046B07A2F70C0</string>
-				<string>FAAD87441DA32D6700B0DD2B</string>
-				<string>FAAD87451DA32D6700B0DD2B</string>
-				<string>FAAD87461DA32D6700B0DD2B</string>
-				<string>4B2ADC919747BF4D7BD2AFFE</string>
-				<string>5030A9C1AFCD2981C3362277</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FAAD874A1DA32D6700B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DecksTests</string>
-			<key>productName</key>
-			<string>DecksTests</string>
-			<key>productReference</key>
-			<string>FAAD87481DA32D6700B0DD2B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>FAAD87481DA32D6700B0DD2B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>DecksTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FAAD87491DA32D6700B0DD2B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FAAD872C1DA32D6200B0DD2B</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FAAD87331DA32D6200B0DD2B</string>
-			<key>remoteInfo</key>
-			<string>Decks</string>
-		</dict>
-		<key>FAAD874A1DA32D6700B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>FAAD87331DA32D6200B0DD2B</string>
-			<key>targetProxy</key>
-			<string>FAAD87491DA32D6700B0DD2B</string>
-		</dict>
-		<key>FAAD874B1DA32D6700B0DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAAD874C1DA32D6700B0DD2B</string>
-				<string>FAAD874E1DA32D6700B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DecksTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD874C1DA32D6700B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DecksTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD874D1DA32D6700B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD874C1DA32D6700B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD874E1DA32D6700B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD874F1DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FAAD87581DA32D6700B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87501DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CCBCD562DEBF58A27E61282F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87511DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>FAAD876A1DA3355200B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FAAD87521DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FAAD87621DA32D6800B0DD2B</string>
-			<key>buildPhases</key>
-			<array>
-				<string>047E5480963041749BBE1A56</string>
-				<string>FAAD874F1DA32D6700B0DD2B</string>
-				<string>FAAD87501DA32D6700B0DD2B</string>
-				<string>FAAD87511DA32D6700B0DD2B</string>
-				<string>4BB32983BA47C18DC3C0B2F0</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>FAAD87551DA32D6700B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>DecksUITests</string>
-			<key>productName</key>
-			<string>DecksUITests</string>
-			<key>productReference</key>
-			<string>FAAD87531DA32D6700B0DD2B</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>FAAD87531DA32D6700B0DD2B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>DecksUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FAAD87541DA32D6700B0DD2B</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>FAAD872C1DA32D6200B0DD2B</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>FAAD87331DA32D6200B0DD2B</string>
-			<key>remoteInfo</key>
-			<string>Decks</string>
-		</dict>
-		<key>FAAD87551DA32D6700B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>FAAD87331DA32D6200B0DD2B</string>
-			<key>targetProxy</key>
-			<string>FAAD87541DA32D6700B0DD2B</string>
-		</dict>
-		<key>FAAD87561DA32D6700B0DD2B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FAAD87571DA32D6700B0DD2B</string>
-				<string>FAAD87591DA32D6700B0DD2B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DecksUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87571DA32D6700B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>DecksUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87581DA32D6700B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD87571DA32D6700B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD87591DA32D6700B0DD2B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD875A1DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FAAD875B1DA32D6700B0DD2B</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FAAD875C1DA32D6800B0DD2B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FAAD875D1DA32D6800B0DD2B</string>
-				<string>FAAD875E1DA32D6800B0DD2B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FAAD875D1DA32D6800B0DD2B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>C3CDB3537AC4D6AC0F7467E9</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>E2G7ZKJKQ5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Decks/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Do-Good-Technology.Decks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FAAD875E1DA32D6800B0DD2B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>1D8E91A843B2BC028E37B196</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>E2G7ZKJKQ5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Decks/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Do-Good-Technology.Decks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FAAD875F1DA32D6800B0DD2B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FAAD87601DA32D6800B0DD2B</string>
-				<string>FAAD87611DA32D6800B0DD2B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FAAD87601DA32D6800B0DD2B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>836D1BC25E744ADD23CF4831</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>E2G7ZKJKQ5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DecksTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Do-Good-Technology.DecksTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Decks.app/Decks</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FAAD87611DA32D6800B0DD2B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>635E13260CE88509C2C305AC</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>E2G7ZKJKQ5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DecksTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Do-Good-Technology.DecksTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Decks.app/Decks</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FAAD87621DA32D6800B0DD2B</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>FAAD87631DA32D6800B0DD2B</string>
-				<string>FAAD87641DA32D6800B0DD2B</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FAAD87631DA32D6800B0DD2B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0A3C8B5E0D67B8EE788EAC30</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>E2G7ZKJKQ5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DecksUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Do-Good-Technology.DecksUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Decks</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>FAAD87641DA32D6800B0DD2B</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>86B9E4E640ADB73211B1D400</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
-				<string>YES</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>E2G7ZKJKQ5</string>
-				<key>INFOPLIST_FILE</key>
-				<string>DecksUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>Do-Good-Technology.DecksUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Decks</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>FAAD87671DA3355200B0DD2B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>GoogleService-Info-Decks.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FAAD87681DA3355200B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD87671DA3355200B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD87691DA3355200B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD87671DA3355200B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAAD876A1DA3355200B0DD2B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FAAD87671DA3355200B0DD2B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>FAAD872C1DA32D6200B0DD2B</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1366EC10B21D6870C9BB7773 /* Pods_DecksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC2DDE9CF6F187BB0CC8C2 /* Pods_DecksTests.framework */; };
+		20CCCFA0C0B39736DD08C3E3 /* Pods_Decks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A839E0EABDE22E0D7984E51 /* Pods_Decks.framework */; };
+		CCBCD562DEBF58A27E61282F /* Pods_DecksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9858547FB085A2282FBCC516 /* Pods_DecksUITests.framework */; };
+		FAAC44D41DC59FEB00BE8267 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D31DC59FEB00BE8267 /* UIHelper.swift */; };
+		FAAC44D61DC5A01400BE8267 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */; };
+		FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */; };
+		FAAC44DA1DC5A04E00BE8267 /* DeckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D91DC5A04E00BE8267 /* DeckDetailViewController.swift */; };
+		FAAC44DC1DC5A05A00BE8267 /* FlashcardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44DB1DC5A05A00BE8267 /* FlashcardViewController.swift */; };
+		FAAC44DE1DC5A06900BE8267 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44DD1DC5A06900BE8267 /* ProfileViewController.swift */; };
+		FAAC44E01DC5A0E300BE8267 /* UserProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44DF1DC5A0E300BE8267 /* UserProfileCell.swift */; };
+		FAAC44E21DC5A11900BE8267 /* DeckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E11DC5A11900BE8267 /* DeckCell.swift */; };
+		FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E31DC5A12600BE8267 /* DeckOutlineCell.swift */; };
+		FAAC44E61DC5A1A400BE8267 /* DeckDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E51DC5A1A400BE8267 /* DeckDetailCell.swift */; };
+		FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */; };
+		FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD87391DA32D6500B0DD2B /* ViewController.swift */; };
+		FAAD873D1DA32D6600B0DD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD873B1DA32D6600B0DD2B /* Main.storyboard */; };
+		FAAD873F1DA32D6600B0DD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAD873E1DA32D6600B0DD2B /* Assets.xcassets */; };
+		FAAD87421DA32D6600B0DD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87401DA32D6600B0DD2B /* LaunchScreen.storyboard */; };
+		FAAD874D1DA32D6700B0DD2B /* DecksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD874C1DA32D6700B0DD2B /* DecksTests.swift */; };
+		FAAD87581DA32D6700B0DD2B /* DecksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD87571DA32D6700B0DD2B /* DecksUITests.swift */; };
+		FAAD87681DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
+		FAAD87691DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
+		FAAD876A1DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAAD87491DA32D6700B0DD2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAAD872C1DA32D6200B0DD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAAD87331DA32D6200B0DD2B;
+			remoteInfo = Decks;
+		};
+		FAAD87541DA32D6700B0DD2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAAD872C1DA32D6200B0DD2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAAD87331DA32D6200B0DD2B;
+			remoteInfo = Decks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A3C8B5E0D67B8EE788EAC30 /* Pods-DecksUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecksUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DecksUITests/Pods-DecksUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D8E91A843B2BC028E37B196 /* Pods-Decks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decks.release.xcconfig"; path = "Pods/Target Support Files/Pods-Decks/Pods-Decks.release.xcconfig"; sourceTree = "<group>"; };
+		38BC2DDE9CF6F187BB0CC8C2 /* Pods_DecksTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DecksTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		635E13260CE88509C2C305AC /* Pods-DecksTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecksTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests.release.xcconfig"; sourceTree = "<group>"; };
+		836D1BC25E744ADD23CF4831 /* Pods-DecksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecksTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86B9E4E640ADB73211B1D400 /* Pods-DecksUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DecksUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DecksUITests/Pods-DecksUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9858547FB085A2282FBCC516 /* Pods_DecksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DecksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A839E0EABDE22E0D7984E51 /* Pods_Decks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Decks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3CDB3537AC4D6AC0F7467E9 /* Pods-Decks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Decks/Pods-Decks.debug.xcconfig"; sourceTree = "<group>"; };
+		FAAC44D31DC59FEB00BE8267 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDecksViewController.swift; sourceTree = "<group>"; };
+		FAAC44D91DC5A04E00BE8267 /* DeckDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckDetailViewController.swift; sourceTree = "<group>"; };
+		FAAC44DB1DC5A05A00BE8267 /* FlashcardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlashcardViewController.swift; sourceTree = "<group>"; };
+		FAAC44DD1DC5A06900BE8267 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FAAC44DF1DC5A0E300BE8267 /* UserProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileCell.swift; sourceTree = "<group>"; };
+		FAAC44E11DC5A11900BE8267 /* DeckCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckCell.swift; sourceTree = "<group>"; };
+		FAAC44E31DC5A12600BE8267 /* DeckOutlineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOutlineCell.swift; sourceTree = "<group>"; };
+		FAAC44E51DC5A1A400BE8267 /* DeckDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckDetailCell.swift; sourceTree = "<group>"; };
+		FAAD87341DA32D6500B0DD2B /* Decks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAAD87391DA32D6500B0DD2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAAD873C1DA32D6600B0DD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAAD873E1DA32D6600B0DD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAAD87411DA32D6600B0DD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAAD87431DA32D6600B0DD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAD87481DA32D6700B0DD2B /* DecksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAD874C1DA32D6700B0DD2B /* DecksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksTests.swift; sourceTree = "<group>"; };
+		FAAD874E1DA32D6700B0DD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAD87531DA32D6700B0DD2B /* DecksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAAD87571DA32D6700B0DD2B /* DecksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksUITests.swift; sourceTree = "<group>"; };
+		FAAD87591DA32D6700B0DD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Decks.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAAD87311DA32D6200B0DD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20CCCFA0C0B39736DD08C3E3 /* Pods_Decks.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAD87451DA32D6700B0DD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1366EC10B21D6870C9BB7773 /* Pods_DecksTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAD87501DA32D6700B0DD2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBCD562DEBF58A27E61282F /* Pods_DecksUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49D800882575901468350D4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3CDB3537AC4D6AC0F7467E9 /* Pods-Decks.debug.xcconfig */,
+				1D8E91A843B2BC028E37B196 /* Pods-Decks.release.xcconfig */,
+				836D1BC25E744ADD23CF4831 /* Pods-DecksTests.debug.xcconfig */,
+				635E13260CE88509C2C305AC /* Pods-DecksTests.release.xcconfig */,
+				0A3C8B5E0D67B8EE788EAC30 /* Pods-DecksUITests.debug.xcconfig */,
+				86B9E4E640ADB73211B1D400 /* Pods-DecksUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AF1FE577E46EDD1064E75155 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A839E0EABDE22E0D7984E51 /* Pods_Decks.framework */,
+				38BC2DDE9CF6F187BB0CC8C2 /* Pods_DecksTests.framework */,
+				9858547FB085A2282FBCC516 /* Pods_DecksUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAAC44D01DC59FD900BE8267 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC44D31DC59FEB00BE8267 /* UIHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAAC44D11DC59FD900BE8267 /* Tableview Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC44DF1DC5A0E300BE8267 /* UserProfileCell.swift */,
+				FAAC44E11DC5A11900BE8267 /* DeckCell.swift */,
+				FAAC44E31DC5A12600BE8267 /* DeckOutlineCell.swift */,
+				FAAC44E51DC5A1A400BE8267 /* DeckDetailCell.swift */,
+			);
+			path = "Tableview Cells";
+			sourceTree = "<group>";
+		};
+		FAAC44D21DC59FD900BE8267 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */,
+				FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */,
+				FAAC44D91DC5A04E00BE8267 /* DeckDetailViewController.swift */,
+				FAAC44DB1DC5A05A00BE8267 /* FlashcardViewController.swift */,
+				FAAC44DD1DC5A06900BE8267 /* ProfileViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FAAD872B1DA32D6200B0DD2B = {
+			isa = PBXGroup;
+			children = (
+				FAAD87361DA32D6500B0DD2B /* Decks */,
+				FAAD874B1DA32D6700B0DD2B /* DecksTests */,
+				FAAD87561DA32D6700B0DD2B /* DecksUITests */,
+				FAAD87351DA32D6500B0DD2B /* Products */,
+				49D800882575901468350D4E /* Pods */,
+				AF1FE577E46EDD1064E75155 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAAD87351DA32D6500B0DD2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD87341DA32D6500B0DD2B /* Decks.app */,
+				FAAD87481DA32D6700B0DD2B /* DecksTests.xctest */,
+				FAAD87531DA32D6700B0DD2B /* DecksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAAD87361DA32D6500B0DD2B /* Decks */ = {
+			isa = PBXGroup;
+			children = (
+				FAAC44D01DC59FD900BE8267 /* Helpers */,
+				FAAC44D11DC59FD900BE8267 /* Tableview Cells */,
+				FAAC44D21DC59FD900BE8267 /* View Controllers */,
+				FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */,
+				FAAD87391DA32D6500B0DD2B /* ViewController.swift */,
+				FAAD873B1DA32D6600B0DD2B /* Main.storyboard */,
+				FAAD873E1DA32D6600B0DD2B /* Assets.xcassets */,
+				FAAD87401DA32D6600B0DD2B /* LaunchScreen.storyboard */,
+				FAAD87431DA32D6600B0DD2B /* Info.plist */,
+				FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */,
+			);
+			path = Decks;
+			sourceTree = "<group>";
+		};
+		FAAD874B1DA32D6700B0DD2B /* DecksTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD874C1DA32D6700B0DD2B /* DecksTests.swift */,
+				FAAD874E1DA32D6700B0DD2B /* Info.plist */,
+			);
+			path = DecksTests;
+			sourceTree = "<group>";
+		};
+		FAAD87561DA32D6700B0DD2B /* DecksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAAD87571DA32D6700B0DD2B /* DecksUITests.swift */,
+				FAAD87591DA32D6700B0DD2B /* Info.plist */,
+			);
+			path = DecksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAAD87331DA32D6200B0DD2B /* Decks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAD875C1DA32D6800B0DD2B /* Build configuration list for PBXNativeTarget "Decks" */;
+			buildPhases = (
+				88BBCBA2227D1B1DFFC9D7E6 /* Check Pods Manifest.lock */,
+				FAAD87301DA32D6200B0DD2B /* Sources */,
+				FAAD87311DA32D6200B0DD2B /* Frameworks */,
+				FAAD87321DA32D6200B0DD2B /* Resources */,
+				F8966FA204B8FD0004DAC69B /* Embed Pods Frameworks */,
+				C1720CBB874B00854B3789A6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Decks;
+			productName = Decks;
+			productReference = FAAD87341DA32D6500B0DD2B /* Decks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAAD87471DA32D6700B0DD2B /* DecksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAD875F1DA32D6800B0DD2B /* Build configuration list for PBXNativeTarget "DecksTests" */;
+			buildPhases = (
+				86C13431754046B07A2F70C0 /* Check Pods Manifest.lock */,
+				FAAD87441DA32D6700B0DD2B /* Sources */,
+				FAAD87451DA32D6700B0DD2B /* Frameworks */,
+				FAAD87461DA32D6700B0DD2B /* Resources */,
+				4B2ADC919747BF4D7BD2AFFE /* Embed Pods Frameworks */,
+				5030A9C1AFCD2981C3362277 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAAD874A1DA32D6700B0DD2B /* PBXTargetDependency */,
+			);
+			name = DecksTests;
+			productName = DecksTests;
+			productReference = FAAD87481DA32D6700B0DD2B /* DecksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAAD87521DA32D6700B0DD2B /* DecksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAAD87621DA32D6800B0DD2B /* Build configuration list for PBXNativeTarget "DecksUITests" */;
+			buildPhases = (
+				047E5480963041749BBE1A56 /* Check Pods Manifest.lock */,
+				FAAD874F1DA32D6700B0DD2B /* Sources */,
+				FAAD87501DA32D6700B0DD2B /* Frameworks */,
+				FAAD87511DA32D6700B0DD2B /* Resources */,
+				4BB32983BA47C18DC3C0B2F0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAAD87551DA32D6700B0DD2B /* PBXTargetDependency */,
+			);
+			name = DecksUITests;
+			productName = DecksUITests;
+			productReference = FAAD87531DA32D6700B0DD2B /* DecksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAAD872C1DA32D6200B0DD2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = DoGoodTechnology;
+				TargetAttributes = {
+					FAAD87331DA32D6200B0DD2B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E2G7ZKJKQ5;
+						ProvisioningStyle = Automatic;
+					};
+					FAAD87471DA32D6700B0DD2B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E2G7ZKJKQ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAAD87331DA32D6200B0DD2B;
+					};
+					FAAD87521DA32D6700B0DD2B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E2G7ZKJKQ5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FAAD87331DA32D6200B0DD2B;
+					};
+				};
+			};
+			buildConfigurationList = FAAD872F1DA32D6200B0DD2B /* Build configuration list for PBXProject "Decks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAAD872B1DA32D6200B0DD2B;
+			productRefGroup = FAAD87351DA32D6500B0DD2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAAD87331DA32D6200B0DD2B /* Decks */,
+				FAAD87471DA32D6700B0DD2B /* DecksTests */,
+				FAAD87521DA32D6700B0DD2B /* DecksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAAD87321DA32D6200B0DD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAD87421DA32D6600B0DD2B /* LaunchScreen.storyboard in Resources */,
+				FAAD873F1DA32D6600B0DD2B /* Assets.xcassets in Resources */,
+				FAAD87681DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */,
+				FAAD873D1DA32D6600B0DD2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAD87461DA32D6700B0DD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAD87691DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAD87511DA32D6700B0DD2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAD876A1DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		047E5480963041749BBE1A56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4B2ADC919747BF4D7BD2AFFE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BB32983BA47C18DC3C0B2F0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DecksUITests/Pods-DecksUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5030A9C1AFCD2981C3362277 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DecksTests/Pods-DecksTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C13431754046B07A2F70C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88BBCBA2227D1B1DFFC9D7E6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1720CBB874B00854B3789A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Decks/Pods-Decks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8966FA204B8FD0004DAC69B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Decks/Pods-Decks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAAD87301DA32D6200B0DD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAC44DC1DC5A05A00BE8267 /* FlashcardViewController.swift in Sources */,
+				FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */,
+				FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */,
+				FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */,
+				FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */,
+				FAAC44E61DC5A1A400BE8267 /* DeckDetailCell.swift in Sources */,
+				FAAC44D41DC59FEB00BE8267 /* UIHelper.swift in Sources */,
+				FAAC44DA1DC5A04E00BE8267 /* DeckDetailViewController.swift in Sources */,
+				FAAC44E21DC5A11900BE8267 /* DeckCell.swift in Sources */,
+				FAAC44DE1DC5A06900BE8267 /* ProfileViewController.swift in Sources */,
+				FAAC44E01DC5A0E300BE8267 /* UserProfileCell.swift in Sources */,
+				FAAC44D61DC5A01400BE8267 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAD87441DA32D6700B0DD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAD874D1DA32D6700B0DD2B /* DecksTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAAD874F1DA32D6700B0DD2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAD87581DA32D6700B0DD2B /* DecksUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAAD874A1DA32D6700B0DD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAAD87331DA32D6200B0DD2B /* Decks */;
+			targetProxy = FAAD87491DA32D6700B0DD2B /* PBXContainerItemProxy */;
+		};
+		FAAD87551DA32D6700B0DD2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAAD87331DA32D6200B0DD2B /* Decks */;
+			targetProxy = FAAD87541DA32D6700B0DD2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAAD873B1DA32D6600B0DD2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAAD873C1DA32D6600B0DD2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAAD87401DA32D6600B0DD2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAAD87411DA32D6600B0DD2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAAD875A1DA32D6700B0DD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAAD875B1DA32D6700B0DD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAAD875D1DA32D6800B0DD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3CDB3537AC4D6AC0F7467E9 /* Pods-Decks.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E2G7ZKJKQ5;
+				INFOPLIST_FILE = Decks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Do-Good-Technology.Decks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAAD875E1DA32D6800B0DD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D8E91A843B2BC028E37B196 /* Pods-Decks.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E2G7ZKJKQ5;
+				INFOPLIST_FILE = Decks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Do-Good-Technology.Decks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FAAD87601DA32D6800B0DD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836D1BC25E744ADD23CF4831 /* Pods-DecksTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E2G7ZKJKQ5;
+				INFOPLIST_FILE = DecksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Do-Good-Technology.DecksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decks.app/Decks";
+			};
+			name = Debug;
+		};
+		FAAD87611DA32D6800B0DD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 635E13260CE88509C2C305AC /* Pods-DecksTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E2G7ZKJKQ5;
+				INFOPLIST_FILE = DecksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Do-Good-Technology.DecksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Decks.app/Decks";
+			};
+			name = Release;
+		};
+		FAAD87631DA32D6800B0DD2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3C8B5E0D67B8EE788EAC30 /* Pods-DecksUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = E2G7ZKJKQ5;
+				INFOPLIST_FILE = DecksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Do-Good-Technology.DecksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Decks;
+			};
+			name = Debug;
+		};
+		FAAD87641DA32D6800B0DD2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86B9E4E640ADB73211B1D400 /* Pods-DecksUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = E2G7ZKJKQ5;
+				INFOPLIST_FILE = DecksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Do-Good-Technology.DecksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Decks;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAAD872F1DA32D6200B0DD2B /* Build configuration list for PBXProject "Decks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAD875A1DA32D6700B0DD2B /* Debug */,
+				FAAD875B1DA32D6700B0DD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAD875C1DA32D6800B0DD2B /* Build configuration list for PBXNativeTarget "Decks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAD875D1DA32D6800B0DD2B /* Debug */,
+				FAAD875E1DA32D6800B0DD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAD875F1DA32D6800B0DD2B /* Build configuration list for PBXNativeTarget "DecksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAD87601DA32D6800B0DD2B /* Debug */,
+				FAAD87611DA32D6800B0DD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAAD87621DA32D6800B0DD2B /* Build configuration list for PBXNativeTarget "DecksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAAD87631DA32D6800B0DD2B /* Debug */,
+				FAAD87641DA32D6800B0DD2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAAD872C1DA32D6200B0DD2B /* Project object */;
+}
