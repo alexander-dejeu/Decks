@@ -20,6 +20,7 @@
 		FAAC44E21DC5A11900BE8267 /* DeckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E11DC5A11900BE8267 /* DeckCell.swift */; };
 		FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E31DC5A12600BE8267 /* DeckOutlineCell.swift */; };
 		FAAC44E61DC5A1A400BE8267 /* DeckDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E51DC5A1A400BE8267 /* DeckDetailCell.swift */; };
+		FAAC44E81DC5A6A900BE8267 /* AccountsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E71DC5A6A900BE8267 /* AccountsCell.swift */; };
 		FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */; };
 		FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD87391DA32D6500B0DD2B /* ViewController.swift */; };
 		FAAD873D1DA32D6600B0DD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD873B1DA32D6600B0DD2B /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		FAAC44E11DC5A11900BE8267 /* DeckCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckCell.swift; sourceTree = "<group>"; };
 		FAAC44E31DC5A12600BE8267 /* DeckOutlineCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckOutlineCell.swift; sourceTree = "<group>"; };
 		FAAC44E51DC5A1A400BE8267 /* DeckDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckDetailCell.swift; sourceTree = "<group>"; };
+		FAAC44E71DC5A6A900BE8267 /* AccountsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsCell.swift; sourceTree = "<group>"; };
 		FAAD87341DA32D6500B0DD2B /* Decks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAAD87391DA32D6500B0DD2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				FAAC44E11DC5A11900BE8267 /* DeckCell.swift */,
 				FAAC44E31DC5A12600BE8267 /* DeckOutlineCell.swift */,
 				FAAC44E51DC5A1A400BE8267 /* DeckDetailCell.swift */,
+				FAAC44E71DC5A6A900BE8267 /* AccountsCell.swift */,
 			);
 			path = "Tableview Cells";
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 			files = (
 				FAAC44DC1DC5A05A00BE8267 /* FlashcardViewController.swift in Sources */,
 				FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */,
+				FAAC44E81DC5A6A900BE8267 /* AccountsCell.swift in Sources */,
 				FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */,
 				FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */,
 				FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */,

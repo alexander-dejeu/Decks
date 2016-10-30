@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyDecksViewController: UIViewController {
+class MyDecksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +19,28 @@ class MyDecksViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //Cell code
+        
+        if(indexPath.row % 2 == 0){
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DeckCell", for: indexPath) as! DeckCell
+            return cell
+        }
+        else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "DeckOutlineCell", for: indexPath) as! DeckOutlineCell
+            return cell
+        }
+        
+        
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "segueToDeckDetails", sender: nil)
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
     }
     
 
