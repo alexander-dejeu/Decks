@@ -911,6 +911,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="Axd-Uu-vA3" secondAttribute="trailing" id="tOY-Sk-1vo"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="accountHandleLabel" destination="Axd-Uu-vA3" id="Q9d-ng-rwK"/>
+                                            <outlet property="accountLogoImageView" destination="n34-wG-hB1" id="eCU-ic-UF4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

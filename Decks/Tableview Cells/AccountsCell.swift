@@ -9,6 +9,9 @@
 import UIKit
 
 class AccountsCell: UITableViewCell {
+    
+    @IBOutlet weak var accountHandleLabel: UILabel!
+    @IBOutlet weak var accountLogoImageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

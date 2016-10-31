@@ -10,6 +10,7 @@
 		1366EC10B21D6870C9BB7773 /* Pods_DecksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38BC2DDE9CF6F187BB0CC8C2 /* Pods_DecksTests.framework */; };
 		20CCCFA0C0B39736DD08C3E3 /* Pods_Decks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A839E0EABDE22E0D7984E51 /* Pods_Decks.framework */; };
 		CCBCD562DEBF58A27E61282F /* Pods_DecksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9858547FB085A2282FBCC516 /* Pods_DecksUITests.framework */; };
+		FA6AE2E91DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE2E81DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift */; };
 		FAAC44D41DC59FEB00BE8267 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D31DC59FEB00BE8267 /* UIHelper.swift */; };
 		FAAC44D61DC5A01400BE8267 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */; };
 		FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */; };
@@ -60,6 +61,7 @@
 		9858547FB085A2282FBCC516 /* Pods_DecksUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DecksUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A839E0EABDE22E0D7984E51 /* Pods_Decks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Decks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CDB3537AC4D6AC0F7467E9 /* Pods-Decks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Decks/Pods-Decks.debug.xcconfig"; sourceTree = "<group>"; };
+		FA6AE2E81DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentlyJoinedPeopleView.swift; sourceTree = "<group>"; };
 		FAAC44D31DC59FEB00BE8267 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDecksViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA6AE2E71DC67AED00FD91CA /* Custom Elements */ = {
+			isa = PBXGroup;
+			children = (
+				FA6AE2E81DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift */,
+			);
+			path = "Custom Elements";
+			sourceTree = "<group>";
+		};
 		FAAC44D01DC59FD900BE8267 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +205,7 @@
 		FAAD87361DA32D6500B0DD2B /* Decks */ = {
 			isa = PBXGroup;
 			children = (
+				FA6AE2E71DC67AED00FD91CA /* Custom Elements */,
 				FAAC44D01DC59FD900BE8267 /* Helpers */,
 				FAAC44D11DC59FD900BE8267 /* Tableview Cells */,
 				FAAC44D21DC59FD900BE8267 /* View Controllers */,
@@ -500,6 +511,7 @@
 			files = (
 				FAAC44DC1DC5A05A00BE8267 /* FlashcardViewController.swift in Sources */,
 				FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */,
+				FA6AE2E91DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift in Sources */,
 				FAAC44E81DC5A6A900BE8267 /* AccountsCell.swift in Sources */,
 				FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */,
 				FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */,
