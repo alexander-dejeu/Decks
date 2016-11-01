@@ -10,6 +10,7 @@ import UIKit
 
 class RecentlyJoinedPeopleView: UIView {
 
+    var imageViews : [UIImageView] = []
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
@@ -17,5 +18,11 @@ class RecentlyJoinedPeopleView: UIView {
         // Drawing code
     }
     */
+    
+    func createViews(size: CGFloat, images: [UIImage]){
+        //first determine size of the createViews and then create that many views spaced out
+        
+        //Then populate the said views with images from images - max 6
+    }
 
 }
