@@ -180,7 +180,7 @@
                                                             <color key="textColor" red="0.60779517890000001" green="0.60787016149999995" blue="0.60776960849999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpU-IA-K0S">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpU-IA-K0S" customClass="RecentlyJoinedPeopleView" customModule="Decks" customModuleProvider="target">
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="43" id="cQo-Js-GJV"/>
@@ -243,6 +243,16 @@
                                                 <constraint firstItem="az3-EC-4bW" firstAttribute="top" secondItem="NA5-di-hPJ" secondAttribute="top" constant="16" id="vLD-8v-7j9"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deckBackground" destination="az3-EC-4bW" id="31E-Xa-qGI"/>
+                                            <outlet property="deckCardCountLabel" destination="46z-E0-YWL" id="Pad-PC-EaN"/>
+                                            <outlet property="deckCategoryLabel" destination="wLp-I2-LVg" id="oTm-Cc-Hq7"/>
+                                            <outlet property="deckFriendsCountLabel" destination="gjC-HM-6di" id="Zm9-Rs-2JM"/>
+                                            <outlet property="deckIconImageview" destination="RJ7-Xt-yPT" id="GTc-YF-h5x"/>
+                                            <outlet property="deckRecentlyJoined" destination="bpU-IA-K0S" id="kyV-O1-mjf"/>
+                                            <outlet property="deckShortDiscription" destination="w18-oO-dcA" id="wMW-o1-aCg"/>
+                                            <outlet property="deckTitleLabel" destination="v2t-vJ-29b" id="hlG-wR-6X5"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeckOutlineCell" rowHeight="204" id="eHX-N1-sFR" customClass="DeckOutlineCell" customModule="Decks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="296" width="375" height="204"/>
@@ -511,6 +521,16 @@
                                                 <constraint firstItem="qtM-UP-6Sc" firstAttribute="top" secondItem="vPn-mN-6TJ" secondAttribute="top" constant="10" id="hxz-Vh-qLM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="deckCardCountLabel" destination="vN6-Hl-y5B" id="KqQ-33-lpf"/>
+                                            <outlet property="deckCategoryLabel" destination="VQi-Qv-v9d" id="3GJ-de-DBJ"/>
+                                            <outlet property="deckExtendedDetailLabel" destination="LSL-vM-Lg6" id="fcK-hv-83L"/>
+                                            <outlet property="deckFriendCountLabel" destination="K4B-6E-Cyw" id="2aK-fu-bB7"/>
+                                            <outlet property="deckIconImageView" destination="oIN-hA-5Gb" id="Wwh-i0-fof"/>
+                                            <outlet property="deckTitleLabel" destination="7d4-a7-s7W" id="y1J-PF-DJk"/>
+                                            <outlet property="flashCardButton" destination="FLp-A4-ElW" id="vFp-3t-Tcp"/>
+                                            <outlet property="flashCardView" destination="6Ii-NM-vrv" id="2y6-If-cVk"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserProfileCell" rowHeight="92" id="9PX-5b-Bhy" customClass="UserProfileCell" customModule="Decks" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="311" width="375" height="92"/>
@@ -542,7 +562,7 @@
                                                             <color key="textColor" red="0.29017105700000001" green="0.2902101278" blue="0.29015776519999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5x-HT-gxw">
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V5x-HT-gxw" customClass="UserProfileSocialIconsView" customModule="Decks" customModuleProvider="target">
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="15" id="Fgi-lz-ZED"/>
@@ -581,6 +601,14 @@
                                                 <constraint firstAttribute="trailing" secondItem="fgt-ZV-FlW" secondAttribute="trailing" id="s3T-uo-rYQ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="profileBackground" destination="yF0-Tj-nXf" id="Kta-Es-Is2"/>
+                                            <outlet property="userFriendCountLabel" destination="Bhq-ez-LXB" id="RK7-2A-PcY"/>
+                                            <outlet property="userJoinedLabel" destination="JnK-bp-fTw" id="BKh-06-QKB"/>
+                                            <outlet property="userNameLahel" destination="Iaq-Zo-bvr" id="wrA-mq-o8H"/>
+                                            <outlet property="userProfileImageView" destination="8S6-om-VVv" id="9sr-52-vlc"/>
+                                            <outlet property="userSocialIconsView" destination="V5x-HT-gxw" id="JsO-Ev-Nmg"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

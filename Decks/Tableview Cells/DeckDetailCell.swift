@@ -10,6 +10,18 @@ import UIKit
 
 class DeckDetailCell: UITableViewCell {
 
+    @IBOutlet weak var deckTitleLabel: UILabel!
+    @IBOutlet weak var deckExtendedDetailLabel: UILabel!
+    @IBOutlet weak var deckCardCountLabel: UILabel!
+    @IBOutlet weak var deckFriendCountLabel: UILabel!
+    
+    @IBOutlet weak var flashCardButton: UIButton!
+    @IBOutlet weak var deckIconImageView: UIImageView!
+    @IBOutlet weak var deckCategoryLabel: UILabel!
+    
+    @IBOutlet weak var flashCardView: UIView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

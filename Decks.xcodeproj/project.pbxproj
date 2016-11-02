@@ -32,6 +32,7 @@
 		FAAD87681DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
 		FAAD87691DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
 		FAAD876A1DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
+		FAE3EA451DCA68AF00B375ED /* UserProfileSocialIconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3EA441DCA68AF00B375ED /* UserProfileSocialIconsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		FAAD87571DA32D6700B0DD2B /* DecksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecksUITests.swift; sourceTree = "<group>"; };
 		FAAD87591DA32D6700B0DD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Decks.plist"; sourceTree = "<group>"; };
+		FAE3EA441DCA68AF00B375ED /* UserProfileSocialIconsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileSocialIconsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				FA6AE2E81DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift */,
+				FAE3EA441DCA68AF00B375ED /* UserProfileSocialIconsView.swift */,
 			);
 			path = "Custom Elements";
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */,
 				FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */,
 				FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */,
+				FAE3EA451DCA68AF00B375ED /* UserProfileSocialIconsView.swift in Sources */,
 				FAAC44E61DC5A1A400BE8267 /* DeckDetailCell.swift in Sources */,
 				FAAC44D41DC59FEB00BE8267 /* UIHelper.swift in Sources */,
 				FAAC44DA1DC5A04E00BE8267 /* DeckDetailViewController.swift in Sources */,
