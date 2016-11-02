@@ -33,6 +33,7 @@
 		FAAD87691DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
 		FAAD876A1DA3355200B0DD2B /* GoogleService-Info-Decks.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */; };
 		FAE3EA451DCA68AF00B375ED /* UserProfileSocialIconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3EA441DCA68AF00B375ED /* UserProfileSocialIconsView.swift */; };
+		FAE3EA471DCA6D4800B375ED /* flashcardOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE3EA461DCA6D4800B375ED /* flashcardOptionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		FAAD87591DA32D6700B0DD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAAD87671DA3355200B0DD2B /* GoogleService-Info-Decks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-Decks.plist"; sourceTree = "<group>"; };
 		FAE3EA441DCA68AF00B375ED /* UserProfileSocialIconsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileSocialIconsView.swift; sourceTree = "<group>"; };
+		FAE3EA461DCA6D4800B375ED /* flashcardOptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = flashcardOptionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				FA6AE2E81DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift */,
 				FAE3EA441DCA68AF00B375ED /* UserProfileSocialIconsView.swift */,
+				FAE3EA461DCA6D4800B375ED /* flashcardOptionsView.swift */,
 			);
 			path = "Custom Elements";
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */,
 				FA6AE2E91DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift in Sources */,
 				FAAC44E81DC5A6A900BE8267 /* AccountsCell.swift in Sources */,
+				FAE3EA471DCA6D4800B375ED /* flashcardOptionsView.swift in Sources */,
 				FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */,
 				FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */,
 				FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */,

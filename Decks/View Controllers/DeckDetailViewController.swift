@@ -9,6 +9,8 @@
 import UIKit
 
 class DeckDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var deckDetailTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

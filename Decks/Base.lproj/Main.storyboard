@@ -393,6 +393,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="deckTableView" destination="6F5-yN-9hb" id="kHM-GF-wTp"/>
                         <segue destination="Oq4-Bj-Cud" kind="show" identifier="segueToDeckDetails" id="TIy-Dp-DEs"/>
                     </connections>
                 </viewController>
@@ -626,6 +627,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="deckDetailTableView" destination="OtK-sy-ah5" id="EFn-j3-lMR"/>
                         <segue destination="7JG-VC-bns" kind="show" identifier="SegueToDeckFlashcards" id="9jy-Zo-NKU"/>
                     </connections>
                 </viewController>
@@ -650,7 +652,7 @@
                                     <constraint firstAttribute="width" secondItem="3KV-XJ-GJp" secondAttribute="height" multiplier="1:1" id="2ZC-8t-58r"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb1-pr-it3">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jb1-pr-it3" customClass="flashcardOptionsView" customModule="Decks" customModuleProvider="target">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFM-fQ-F5K">
                                         <subviews>
@@ -659,7 +661,11 @@
                                                 <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgq-tE-jag"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgq-tE-jag">
+                                                <connections>
+                                                    <action selector="buttonWasTapepdWithSender:" destination="jb1-pr-it3" eventType="touchUpInside" id="cUC-Yt-lSv"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
@@ -681,7 +687,11 @@
                                                 <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dso-7w-qeZ"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dso-7w-qeZ">
+                                                <connections>
+                                                    <action selector="buttonWasTapepdWithSender:" destination="jb1-pr-it3" eventType="touchUpInside" id="iXm-Uw-ZNN"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
@@ -703,7 +713,11 @@
                                                 <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hj-Ss-1qh"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hj-Ss-1qh">
+                                                <connections>
+                                                    <action selector="buttonWasTapepdWithSender:" destination="jb1-pr-it3" eventType="touchUpInside" id="FZ0-0w-9u7"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
@@ -725,7 +739,11 @@
                                                 <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wb-MH-6Hf"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wb-MH-6Hf">
+                                                <connections>
+                                                    <action selector="buttonWasTapepdWithSender:" destination="jb1-pr-it3" eventType="touchUpInside" id="dqZ-7W-HJu"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
@@ -757,6 +775,20 @@
                                     <constraint firstItem="HFM-fQ-F5K" firstAttribute="top" secondItem="jb1-pr-it3" secondAttribute="top" id="x3Y-xD-lGW"/>
                                     <constraint firstItem="2Z2-y0-CD5" firstAttribute="top" secondItem="XT1-n9-71z" secondAttribute="bottom" constant="15" id="yhO-vI-OZh"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="optionFourButton" destination="3Wb-MH-6Hf" id="KnT-cC-2LN"/>
+                                    <outlet property="optionFourLabel" destination="PIL-gW-VC0" id="AOY-uw-OOS"/>
+                                    <outlet property="optionFourView" destination="agw-5b-11z" id="AOj-S8-n9r"/>
+                                    <outlet property="optionOneButton" destination="Zgq-tE-jag" id="9hz-vg-Qjx"/>
+                                    <outlet property="optionOneLabel" destination="LAX-BO-kti" id="jez-WS-4X4"/>
+                                    <outlet property="optionOneView" destination="HFM-fQ-F5K" id="Tof-MG-rGB"/>
+                                    <outlet property="optionThreeButton" destination="8Hj-Ss-1qh" id="i5S-cX-oMf"/>
+                                    <outlet property="optionThreeLabel" destination="TQt-E3-E5U" id="L4C-B0-sPA"/>
+                                    <outlet property="optionThreeView" destination="2Z2-y0-CD5" id="hr0-SJ-OuG"/>
+                                    <outlet property="optionTwoButton" destination="dso-7w-qeZ" id="FPu-D9-c8P"/>
+                                    <outlet property="optionTwoLabel" destination="WAG-GL-ugm" id="rmc-JY-5qe"/>
+                                    <outlet property="optionTwoView" destination="XT1-n9-71z" id="uTO-LT-rzc"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKB-UY-nYx">
                                 <subviews>
@@ -765,11 +797,16 @@
                                         <color key="textColor" red="0.2901960784" green="0.56470588239999997" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oux-tD-tEt"/>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="Oux-tD-tEt" firstAttribute="top" secondItem="vKB-UY-nYx" secondAttribute="top" id="1Zc-4X-MXX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oux-tD-tEt" secondAttribute="trailing" id="FPA-9U-dOP"/>
                                     <constraint firstAttribute="width" constant="140" id="G5r-2J-fx5"/>
                                     <constraint firstAttribute="height" constant="50" id="R3r-oi-8mP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oux-tD-tEt" secondAttribute="bottom" id="WwG-03-maF"/>
+                                    <constraint firstItem="Oux-tD-tEt" firstAttribute="leading" secondItem="vKB-UY-nYx" secondAttribute="leading" id="h8H-8H-d5S"/>
                                     <constraint firstItem="wkY-bg-LRQ" firstAttribute="centerX" secondItem="vKB-UY-nYx" secondAttribute="centerX" id="mCg-ur-SM6"/>
                                     <constraint firstItem="wkY-bg-LRQ" firstAttribute="centerY" secondItem="vKB-UY-nYx" secondAttribute="centerY" id="yx5-YA-mEX"/>
                                 </constraints>
@@ -787,6 +824,13 @@
                             <constraint firstAttribute="trailing" secondItem="jb1-pr-it3" secondAttribute="trailing" constant="23" id="sgd-DF-W3M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardOptionsView" destination="jb1-pr-it3" id="HnX-m1-ppN"/>
+                        <outlet property="submitButton" destination="Oux-tD-tEt" id="PVK-A3-gA1"/>
+                        <outlet property="submitLabel" destination="wkY-bg-LRQ" id="fD6-Lz-JLv"/>
+                        <outlet property="submitView" destination="vKB-UY-nYx" id="7cn-WG-8tf"/>
+                        <outlet property="userProfileImageView" destination="3KV-XJ-GJp" id="bre-bt-rDP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3v-HY-BW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

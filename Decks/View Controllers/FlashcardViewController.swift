@@ -9,10 +9,21 @@
 import UIKit
 
 class FlashcardViewController: UIViewController {
+    
+    @IBOutlet weak var userProfileImageView: UIImageView!
+    
+    
+    @IBOutlet weak var cardOptionsView: flashcardOptionsView!
+    
+    @IBOutlet weak var submitView: UIView!
+    @IBOutlet weak var submitLabel: UILabel!
+    @IBOutlet weak var submitButton: UIButton!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        cardOptionsView.setup()
         // Do any additional setup after loading the view.
     }
 

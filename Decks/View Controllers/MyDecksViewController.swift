@@ -10,6 +10,10 @@ import UIKit
 
 class MyDecksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
+    @IBOutlet weak var deckTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
