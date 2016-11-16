@@ -23,7 +23,6 @@
 		FAAC44E61DC5A1A400BE8267 /* DeckDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E51DC5A1A400BE8267 /* DeckDetailCell.swift */; };
 		FAAC44E81DC5A6A900BE8267 /* AccountsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44E71DC5A6A900BE8267 /* AccountsCell.swift */; };
 		FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */; };
-		FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAD87391DA32D6500B0DD2B /* ViewController.swift */; };
 		FAAD873D1DA32D6600B0DD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD873B1DA32D6600B0DD2B /* Main.storyboard */; };
 		FAAD873F1DA32D6600B0DD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAD873E1DA32D6600B0DD2B /* Assets.xcassets */; };
 		FAAD87421DA32D6600B0DD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAD87401DA32D6600B0DD2B /* LaunchScreen.storyboard */; };
@@ -77,7 +76,6 @@
 		FAAC44E71DC5A6A900BE8267 /* AccountsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsCell.swift; sourceTree = "<group>"; };
 		FAAD87341DA32D6500B0DD2B /* Decks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Decks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAAD87391DA32D6500B0DD2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAAD873C1DA32D6600B0DD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAAD873E1DA32D6600B0DD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAD87411DA32D6600B0DD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -216,7 +214,6 @@
 				FAAC44D11DC59FD900BE8267 /* Tableview Cells */,
 				FAAC44D21DC59FD900BE8267 /* View Controllers */,
 				FAAD87371DA32D6500B0DD2B /* AppDelegate.swift */,
-				FAAD87391DA32D6500B0DD2B /* ViewController.swift */,
 				FAAD873B1DA32D6600B0DD2B /* Main.storyboard */,
 				FAAD873E1DA32D6600B0DD2B /* Assets.xcassets */,
 				FAAD87401DA32D6600B0DD2B /* LaunchScreen.storyboard */,
@@ -520,7 +517,6 @@
 				FA6AE2E91DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift in Sources */,
 				FAAC44E81DC5A6A900BE8267 /* AccountsCell.swift in Sources */,
 				FAE3EA471DCA6D4800B375ED /* flashcardOptionsView.swift in Sources */,
-				FAAD873A1DA32D6500B0DD2B /* ViewController.swift in Sources */,
 				FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */,
 				FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */,
 				FAE3EA451DCA68AF00B375ED /* UserProfileSocialIconsView.swift in Sources */,

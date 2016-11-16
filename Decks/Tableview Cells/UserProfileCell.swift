@@ -9,8 +9,7 @@
 import UIKit
 
 class UserProfileCell: UITableViewCell {
-
-    
+    //MARK: - IBOutlets
     @IBOutlet weak var userNameLahel: UILabel!
     @IBOutlet weak var userFriendCountLabel: UILabel!
     @IBOutlet weak var userJoinedLabel: UILabel!
@@ -19,17 +18,4 @@ class UserProfileCell: UITableViewCell {
     @IBOutlet weak var userSocialIconsView: UserProfileSocialIconsView!
     
     @IBOutlet weak var profileBackground: UIView!
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

@@ -9,7 +9,7 @@
 import UIKit
 
 class DeckDetailCell: UITableViewCell {
-
+    //MARK: - IBOutlets
     @IBOutlet weak var deckTitleLabel: UILabel!
     @IBOutlet weak var deckExtendedDetailLabel: UILabel!
     @IBOutlet weak var deckCardCountLabel: UILabel!
@@ -21,16 +21,4 @@ class DeckDetailCell: UITableViewCell {
     
     @IBOutlet weak var flashCardView: UIView!
     
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

@@ -10,11 +10,15 @@ import Foundation
 import UIKit
 
 class UIHelper{
+    //MARK: - Static Variables
+    static var blueColorHex = "4A90E2"
+    
+    
+    //MARK: - Static Functions
     static func addCorners(view : UIView, radius: CGFloat) {
         view.layer.cornerRadius = radius
         view.clipsToBounds = true
     }
-    static var blueColorHex = "4A90E2"
 }
 
 extension UIColor {

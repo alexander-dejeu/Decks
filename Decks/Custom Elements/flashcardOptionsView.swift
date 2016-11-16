@@ -9,7 +9,7 @@
 import UIKit
 
 class flashcardOptionsView: UIView {
-    
+    //MARK: - IBOutlets
     @IBOutlet weak var optionOneView: UIView!
     @IBOutlet weak var optionTwoView: UIView!
     @IBOutlet weak var optionThreeView: UIView!
@@ -25,8 +25,8 @@ class flashcardOptionsView: UIView {
     @IBOutlet weak var optionThreeButton: UIButton!
     @IBOutlet weak var optionFourButton: UIButton!
     
-    var selectedAnswer: String? = nil
     
+    //MARK: - IBActions
     @IBAction func buttonWasTapepd(sender: UIButton){
         resetToDefaultState()
         switch sender.tag{
@@ -51,6 +51,12 @@ class flashcardOptionsView: UIView {
         }
     }
     
+    
+    //MARK: - Class Variables
+    var selectedAnswer: String? = nil
+    
+    
+    //MARK: - Class UI Helpers
     func setup(){
         //Set colors
         UIHelper.addCorners(view: optionOneView, radius: 8)
@@ -88,14 +94,4 @@ class flashcardOptionsView: UIView {
         optionFourView.backgroundColor = UIColor.clear
         optionFourLabel.textColor = UIColor(hexString: UIHelper.blueColorHex)
     }
-    
-    
-    /*
-     // Only override draw() if you perform custom drawing.
-     // An empty implementation adversely affects performance during animation.
-     override func draw(_ rect: CGRect) {
-     // Drawing code
-     }
-     */
-    
 }
