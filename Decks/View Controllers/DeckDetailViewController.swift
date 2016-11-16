@@ -19,6 +19,7 @@ class DeckDetailViewController: UIViewController, UITableViewDataSource, UITable
     //MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "__DECK TITLE__"
     }
 
     

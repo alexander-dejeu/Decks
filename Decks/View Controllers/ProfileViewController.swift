@@ -29,6 +29,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: - View Controller lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Profile"
     }
 
     

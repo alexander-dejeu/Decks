@@ -16,6 +16,7 @@ class MyDecksViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "My Decks"
     }
     
     

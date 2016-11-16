@@ -20,7 +20,7 @@ class FlashcardViewController: UIViewController {
     //MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Flashcards"
         cardOptionsView.setup()
     }
 

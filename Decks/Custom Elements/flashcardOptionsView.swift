@@ -31,21 +31,21 @@ class flashcardOptionsView: UIView {
         resetToDefaultState()
         switch sender.tag{
         case 1:
-            optionOneView.backgroundColor = UIColor(hexString: UIHelper.blueColorHex)
+            optionOneView.backgroundColor = UIHelper.themeColor
             optionOneLabel.textColor = UIColor.white
-            optionOneView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+            optionOneView.layer.borderColor = UIHelper.themeColor.cgColor
         case 2:
-            optionTwoView.backgroundColor = UIColor(hexString: UIHelper.blueColorHex)
+            optionTwoView.backgroundColor = UIHelper.themeColor
             optionTwoLabel.textColor = UIColor.white
-            optionTwoView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+            optionTwoView.layer.borderColor = UIHelper.themeColor.cgColor
         case 3:
-            optionThreeView.backgroundColor = UIColor(hexString: UIHelper.blueColorHex)
+            optionThreeView.backgroundColor = UIHelper.themeColor
             optionThreeLabel.textColor = UIColor.white
-            optionThreeView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+            optionThreeView.layer.borderColor = UIHelper.themeColor.cgColor
         case 4:
-            optionFourView.backgroundColor = UIColor(hexString: UIHelper.blueColorHex)
+            optionFourView.backgroundColor = UIHelper.themeColor
             optionFourLabel.textColor = UIColor.white
-            optionFourView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+            optionFourView.layer.borderColor = UIHelper.themeColor.cgColor
         default:
             print("Invalid tag button was pressed")
         }
@@ -78,20 +78,20 @@ class flashcardOptionsView: UIView {
     }
     
     func resetToDefaultState(){
-        optionOneView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+        optionOneView.layer.borderColor = UIHelper.themeColor.cgColor
         optionOneView.backgroundColor = UIColor.clear
-        optionOneLabel.textColor = UIColor(hexString: UIHelper.blueColorHex)
+        optionOneLabel.textColor = UIHelper.themeColor
         
-        optionTwoView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+        optionTwoView.layer.borderColor = UIHelper.themeColor.cgColor
         optionTwoView.backgroundColor = UIColor.clear
-        optionTwoLabel.textColor = UIColor(hexString: UIHelper.blueColorHex)
+        optionTwoLabel.textColor = UIHelper.themeColor
         
-        optionThreeView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+        optionThreeView.layer.borderColor = UIHelper.themeColor.cgColor
         optionThreeView.backgroundColor = UIColor.clear
-        optionThreeLabel.textColor = UIColor(hexString: UIHelper.blueColorHex)
+        optionThreeLabel.textColor = UIHelper.themeColor
         
-        optionFourView.layer.borderColor = UIColor(hexString: UIHelper.blueColorHex).cgColor
+        optionFourView.layer.borderColor = UIHelper.themeColor.cgColor
         optionFourView.backgroundColor = UIColor.clear
-        optionFourLabel.textColor = UIColor(hexString: UIHelper.blueColorHex)
+        optionFourLabel.textColor = UIHelper.themeColor
     }
 }

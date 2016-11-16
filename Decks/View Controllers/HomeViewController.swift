@@ -12,5 +12,6 @@ class HomeViewController: UIViewController {
     //MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Home"
     }
 }
