@@ -11,6 +11,8 @@
 		20CCCFA0C0B39736DD08C3E3 /* Pods_Decks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A839E0EABDE22E0D7984E51 /* Pods_Decks.framework */; };
 		CCBCD562DEBF58A27E61282F /* Pods_DecksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9858547FB085A2282FBCC516 /* Pods_DecksUITests.framework */; };
 		FA6AE2E91DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6AE2E81DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift */; };
+		FAA6D4CC1DE145A1008E2B2A /* GettingStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6D4CB1DE145A1008E2B2A /* GettingStartedViewController.swift */; };
+		FAA6D4CE1DE14A38008E2B2A /* AddProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA6D4CD1DE14A38008E2B2A /* AddProfileImageViewController.swift */; };
 		FAAC44D41DC59FEB00BE8267 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D31DC59FEB00BE8267 /* UIHelper.swift */; };
 		FAAC44D61DC5A01400BE8267 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */; };
 		FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */; };
@@ -63,6 +65,8 @@
 		9A839E0EABDE22E0D7984E51 /* Pods_Decks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Decks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CDB3537AC4D6AC0F7467E9 /* Pods-Decks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Decks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Decks/Pods-Decks.debug.xcconfig"; sourceTree = "<group>"; };
 		FA6AE2E81DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentlyJoinedPeopleView.swift; sourceTree = "<group>"; };
+		FAA6D4CB1DE145A1008E2B2A /* GettingStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingStartedViewController.swift; sourceTree = "<group>"; };
+		FAA6D4CD1DE14A38008E2B2A /* AddProfileImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProfileImageViewController.swift; sourceTree = "<group>"; };
 		FAAC44D31DC59FEB00BE8267 /* UIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDecksViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,15 @@
 			path = "Custom Elements";
 			sourceTree = "<group>";
 		};
+		FAA6D4CA1DE1457B008E2B2A /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				FAA6D4CB1DE145A1008E2B2A /* GettingStartedViewController.swift */,
+				FAA6D4CD1DE14A38008E2B2A /* AddProfileImageViewController.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
 		FAAC44D01DC59FD900BE8267 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +188,7 @@
 		FAAC44D21DC59FD900BE8267 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FAA6D4CA1DE1457B008E2B2A /* OnboardingViews */,
 				FAAC44D51DC5A01400BE8267 /* HomeViewController.swift */,
 				FAAC44D71DC5A03600BE8267 /* MyDecksViewController.swift */,
 				FAAC44D91DC5A04E00BE8267 /* DeckDetailViewController.swift */,
@@ -516,11 +530,13 @@
 				FAAC44D81DC5A03600BE8267 /* MyDecksViewController.swift in Sources */,
 				FA6AE2E91DC67B5200FD91CA /* RecentlyJoinedPeopleView.swift in Sources */,
 				FAAC44E81DC5A6A900BE8267 /* AccountsCell.swift in Sources */,
+				FAA6D4CE1DE14A38008E2B2A /* AddProfileImageViewController.swift in Sources */,
 				FAE3EA471DCA6D4800B375ED /* flashcardOptionsView.swift in Sources */,
 				FAAD87381DA32D6500B0DD2B /* AppDelegate.swift in Sources */,
 				FAAC44E41DC5A12600BE8267 /* DeckOutlineCell.swift in Sources */,
 				FAE3EA451DCA68AF00B375ED /* UserProfileSocialIconsView.swift in Sources */,
 				FAAC44E61DC5A1A400BE8267 /* DeckDetailCell.swift in Sources */,
+				FAA6D4CC1DE145A1008E2B2A /* GettingStartedViewController.swift in Sources */,
 				FAAC44D41DC59FEB00BE8267 /* UIHelper.swift in Sources */,
 				FAAC44DA1DC5A04E00BE8267 /* DeckDetailViewController.swift in Sources */,
 				FAAC44E21DC5A11900BE8267 /* DeckCell.swift in Sources */,
