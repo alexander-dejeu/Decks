@@ -31,11 +31,21 @@ class AddProfileImageViewController: UIViewController {
     // MARK: - ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        backButtonView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 5)
-        nextButtonView.roundCorners(corners: [.topRight, .bottomRight], radius: 5)
+       
         
         UIHelper.addCorners(view: addImageButtonView, radius: addImageButtonView.frame.width / 2.0)
-        addImageButttonView.clipsToBounds = true
+        addImageButtonView.clipsToBounds = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        backButtonView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 5)
+        nextButtonView.roundCorners(corners: [.topRight, .bottomRight], radius: 5)
+        nextButtonView.layer.borderWidth = 1
+        nextButtonView.layer.borderColor = UIHelper.themeColor.cgColor
+        nextButtonView.clipsToBounds = true
+        addImageButtonView.layer.borderWidth = 1
+        addImageButtonView.layer.borderColor = UIHelper.themeColor.cgColor
         
     }
 
