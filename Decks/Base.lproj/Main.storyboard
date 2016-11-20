@@ -1082,7 +1082,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addImageButttonView" destination="bPF-XO-KP7" id="W5a-oO-UrO"/>
+                        <outlet property="addImageButtonView" destination="bPF-XO-KP7" id="FdZ-Vr-EKc"/>
                         <outlet property="backButtonView" destination="xgX-9y-eFr" id="rwW-ob-NlT"/>
                         <outlet property="greatingLabel" destination="6yX-H4-m8h" id="Erv-uV-oMc"/>
                         <outlet property="nextButtonView" destination="NS9-h2-jAZ" id="dzi-tk-eNw"/>

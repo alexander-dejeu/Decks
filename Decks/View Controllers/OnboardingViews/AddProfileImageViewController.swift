@@ -16,7 +16,7 @@ class AddProfileImageViewController: UIViewController {
     
     @IBOutlet weak var backButtonView: UIView!
     @IBOutlet weak var nextButtonView: UIView!
-    @IBOutlet weak var addImageButttonView: UIView!
+    @IBOutlet weak var addImageButtonView: UIView!
     
     
     //MARK: - IBActions
@@ -31,7 +31,11 @@ class AddProfileImageViewController: UIViewController {
     // MARK: - ViewController Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        backButtonView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 5)
+        nextButtonView.roundCorners(corners: [.topRight, .bottomRight], radius: 5)
         
+        UIHelper.addCorners(view: addImageButtonView, radius: addImageButtonView.frame.width / 2.0)
+        addImageButttonView.clipsToBounds = true
         
     }
 
